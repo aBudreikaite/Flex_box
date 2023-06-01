@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+body {
+    max-width: 100%;
+    background: #3cb371;
+    padding: 20px;
+}
+
+p {
+    padding: 20px;
+}
+
+
+h1 {
+    padding: 20px;
+    font-size: 30px;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+/* 
+*   Container base
+*
+*/
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/*
+Column left ( width column)
+*/
+.column-width {
+    width: 55%;
+    align-self: flex-start;
+}
+
+/*
+Column tall, with smaller width ( width column)
+*/
+.column-tall {
+    width: 30%;
+    align-self: flex-start;flex-shrink: 3;
+
+}
+
+.cards-width {
+    background: white;
+    margin: 10px;
+}
+
+.cards-tall {
+    background: white;
+    margin: 10px;
+}
+
+/*
+
+images
+
+*/
+
+.container .column-tall .cards-tall img {
+    max-width: 100%;
+}
+
+.container .column-width .cards-width img {
+    max-width: 100%;
+}
+
+@media (max-width: 900px) {
+    .column-tall, .column-width {
+      flex: 100%;
+    }
+  }
